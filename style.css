@@ -1,0 +1,231 @@
+body
+{
+    font-family: arial , Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    background :linear-gradient(to bottom, black, rgb(104, 252, 255)) ;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+section
+{
+   
+    background: rgba(255, 255, 255, 0.414);
+    width: 100vh;
+    height: 50vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: solid  white  0.2px;
+    @media screen and (max-width:1025px) {
+       height: 60vh;
+       width: 105vh;
+    }
+    
+}
+.second-part
+{
+    border-left: solid white 1px;
+}
+.second-part02
+{
+    margin-left: 32px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+   
+}
+.second-part02 div:nth-child(1)
+{
+    border-bottom: solid 1px black;
+}
+.image
+{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firt-img
+{
+   max-width: 250px;
+   height:230px ;
+   border-radius: 100%;
+}
+/*effet hover when pass over*/
+.firt-img:hover
+{
+   max-width: 290px;
+   height:270px ;
+   border-radius: 100%;
+}
+
+h1
+{
+    color: black;
+    font-size: 2em;
+    font-weight: 700;
+}
+h2
+{
+    color: rgb(62, 62, 62);
+    font-size: 1.7;
+}
+/*elements about mail */
+.the-links
+{
+    display: grid;
+    gap: 10px;
+
+}
+.mails
+{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    border-top:solid black  0.2px ;
+}
+.lesmails
+{
+    max-width: 32px;
+    max-height: 32px;
+}
+.links01
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(75, 75, 75);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600
+}
+.mails .lesmails:hover
+{
+    max-width: 42px;
+    max-height: 42px;
+    filter: invert();
+}
+
+
+/*elements medias query */
+
+
+@media screen and (max-width:426px) 
+{
+    section{
+        display: grid;
+        width: auto;
+        height: auto;
+        margin-top: 10%;
+    }
+    body{
+        display: grid;
+        height: 200%;
+        align-items: center;
+        justify-content: center
+    }
+    .second-part
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: none;
+        /*enlever les les bordeure left*/
+    }
+    .second-part02
+    {
+         border-top: solid white 1px;
+         margin-left: 0;
+    }
+    .firt-img
+   {
+       max-width: 230px;
+       height:210px ;
+       border-radius: 100%;
+   }
+   /*effet hover when pass over*/
+   .firt-img:hover
+   {
+       max-width: 270px;
+       height:250px ;
+       border-radius: 100%;
+   }
+   h1
+   {
+       color: black;
+       font-size: 1.6em;
+       font-weight: 700;
+   }
+   h2
+   {
+       color: rgb(62, 62, 62);
+       font-size: 1.2em;
+   }
+   .links01
+  {
+        font-size: 1em;
+        font-weight: 600
+  } 
+  .second-part02 div:nth-child(1)
+  {
+    text-align: center;
+  } 
+ }
+ @media screen and (min-width:2555px)
+ {
+    .firt-img
+   {
+       min-width: 400px;
+       height:370px ;
+       border-radius: 100%;
+   }
+    .firt-img:hover
+   {
+       min-width: 450px;
+       height:420px ;
+       border-radius: 100%;
+   }
+   .image
+   {
+      width: 500px;
+      height: 500px;
+   }
+   .second-part02
+   {
+    margin-left: 260px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+   }
+   h1 
+   {
+    font-size: 3.4em;
+   }
+   h2 
+   {
+    font-size: 2.8em;
+   }
+   .links01
+   {
+    font-size: 1.8em;
+   }
+   .lesmails
+   {
+    width: 80px;
+    height: 80px;
+   }
+   .the-links
+   {
+    gap: 50px;
+   }
+ }
+
+/*ajouter les tailles des elements en medias screen sur 2560px*/
